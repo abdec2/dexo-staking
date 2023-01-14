@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --border-color: #808195;
+    --font-color: #f2f3f5;
+    --main-background: #0e0822;
+    --cards-bg: #1a1a1e;
+
+}
+
+body {
+    background-color: #090e2a;
+    background-image: url('./assets/bg.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.btn-grad-bg {
+    background: rgb(44, 23, 111);
+    background: -moz-linear-gradient(90deg, rgba(44, 23, 111, 1) 40%, rgba(69, 43, 152, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(44, 23, 111, 1) 40%, rgba(69, 43, 152, 1) 100%);
+    background: linear-gradient(90deg, rgba(44, 23, 111, 1) 40%, rgba(69, 43, 152, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c176f", endColorstr="#452b98", GradientType=1);
+}
+
+.bg-grad {
+    /* background: rgb(42, 23, 105);
+    background: -moz-radial-gradient(circle, rgba(42, 23, 105, 1) 10%, rgba(14, 8, 34, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(42, 23, 105, 1) 10%, rgba(14, 8, 34, 1) 100%);
+    background: radial-gradient(circle, rgba(42, 23, 105, 1) 10%, rgba(14, 8, 34, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a1769", endColorstr="#0e0822", GradientType=1); */
+    background-color: #090e2a;
+
+
+
+}
+
+/* .btn-grad1::after {
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    content: '';
+    bottom: -150px;
+    right: 0;
+    transform: translateX(calc(100vw - 100% + 100px)) scale(0.5);
+    background: rgb(78, 19, 101);
+    background: -moz-radial-gradient(circle, rgba(78, 19, 101, 1) 0%, rgba(42, 23, 105, 0) 76%);
+    background: -webkit-radial-gradient(circle, rgba(78, 19, 101, 1) 0%, rgba(42, 23, 105, 0) 76%);
+    background: radial-gradient(circle, rgba(78, 19, 101, 1) 0%, rgba(42, 23, 105, 0) 76%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4e1365", endColorstr="#2a1769", GradientType=1);
+} */
+
+.web3modal-modal-lightbox {
+    z-index: 50 !important;
+}
+
+@media (min-width: 768px) {
+    .btn-grad1::after {
+        transform: translate(calc(100vw - 100% - 300px), 0) scale(1);
+    }
+}
+
+@media (min-width: 1240px) {
+    .btn-grad1::after {
+        transform: translate(calc(100vw - 200%), 0) scale(1);
+    }
+}
+
+@media (min-width: 1440px) {
+    .btn-grad1::after {
+        transform: translate(calc(100vw - 200%), 0) scale(1);
+    }
+}
+
+@media (min-width: 1690px) {
+    .btn-grad1::after {
+        transform: translate(calc(100vw - 200% - 300px), 0) scale(1);
+    }
+}
